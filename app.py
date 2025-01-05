@@ -93,7 +93,7 @@ with col1:
     A dynamic and results-oriented Snowflake Data Engineer with expertise in designing, developing, and implementing robust data engineering solutions. Proficient in Python, SQL, and PySpark for complex data workflows, and experienced in managing large-scale datasets in Snowflake for optimized analytical performance.
     """)
 with col2:
-    add_gif("Logo\summary.gif")
+    add_gif("Logo/summary.gif")
 # Section: Experience
 st.markdown('<div id="experience"></div>', unsafe_allow_html=True)
 add_multicolor_line()  # Multi-color line
@@ -128,7 +128,7 @@ with col1:
             st.write(f"**Tech Stack**: {exp['tech_stack']}")
 
 with col2:
-    add_gif("Logo\experience.gif")            
+    add_gif("Logo/experience.gif")            
 
 # Section: Projects
 st.markdown('<div id="projects"></div>', unsafe_allow_html=True)
@@ -167,7 +167,7 @@ with col1:
             st.write("**Tech Stack:**")
             st.write(project["tech_stack"])
 with col2:
-    add_gif("Logo\projects1.gif")
+    add_gif("Logo/projects1.gif")
 
 # Section: Skills
 st.markdown('<div id="skills"></div>', unsafe_allow_html=True)
@@ -193,7 +193,7 @@ with col1:
 
     st.markdown(tech_skills, unsafe_allow_html=True)
 with col2:
-    add_gif("Logo\ctechskills.gif")    
+    add_gif("Logo/ctechskills.gif")    
 
 # Certifications
 st.markdown('<div id="Certifications"></div>', unsafe_allow_html=True)
@@ -215,7 +215,7 @@ with col1:
     """)
 
 with col2:
-    add_gif("Logo\certificate.gif")
+    add_gif("Logo/certificate.gif")
 
 
 # Open-Source Contributions
@@ -233,7 +233,7 @@ with col1:
     """)
 
 with col2:
-    add_gif("Logo\open source projects.gif")
+    add_gif("Logo/open source projects.gif")
 
 # Publications
 st.markdown('<div id="Publications"></div>', unsafe_allow_html=True)
@@ -283,7 +283,7 @@ with col1:
     st.markdown("</ul>", unsafe_allow_html=True)
 
 with col2:
-    add_gif("Logo\cblog.gif")
+    add_gif("Logo/cblog.gif")
 
 # Awards & Achievements
 
@@ -383,7 +383,7 @@ with col1:
     """, unsafe_allow_html=True)
 
 with col2:
-    add_gif("Logo\contact.gif")
+    add_gif("Logo/contact.gif")
 
 
 
