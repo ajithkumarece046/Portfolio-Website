@@ -7,7 +7,7 @@ st.set_page_config(page_title="My Portfolio", page_icon=":guardsman:", layout="w
 
 
 def add_gif(gif_path):
-    st.image(gif_path, use_column_width=True) 
+    st.image(gif_path, use_container_width=True) 
 # Sidebar content with custom HTML links
 # with st.sidebar:
 #     # Display the profile GIF
@@ -53,7 +53,7 @@ def add_gif(gif_path):
 
 with st.sidebar:
     # Display the profile GIF
-    st.image("Logo/Propic.gif", use_column_width=True)
+    st.image("Logo/Propic.gif", use_container_width=True)
     st.markdown("""
     <a class="nav-link" href="#introduction">Introduction</a>
     <a class="nav-link" href="#experience">Experience</a>
@@ -81,7 +81,7 @@ def add_multicolor_line():
     """, unsafe_allow_html=True)
 
 def add_gif(gif_path):
-    st.image(gif_path, use_column_width=True)    
+    st.image(gif_path, use_container_width=True)    
 
 # Section: Intro
 st.markdown('<div id="introduction"></div>', unsafe_allow_html=True)
@@ -298,7 +298,7 @@ with col2:
 # with col1:
 #     # Replace with the actual path to your certificate image
 #     certificate_image = Image.open("certificates/award_certificate.png")  
-#     st.image(certificate_image, caption="Certificate of Excellence", use_column_width=True)
+#     st.image(certificate_image, caption="Certificate of Excellence", use_container_width=True)
 
 # with col2:
 #     st.markdown("""
@@ -315,7 +315,7 @@ st.markdown('<a id="awards-and-achievements"></a>', unsafe_allow_html=True)  # A
 col1, col2 = st.columns([2, 1])
 
 with col2:
-    st.image("Logo/s_achivements.gif", use_column_width=True)  
+    st.image("Logo/s_achivements.gif", use_container_width=True)  
 
 
 with col1:
@@ -326,8 +326,8 @@ with col1:
         
         with col1:
             # Replace with the actual path to your certificate image
-            certificate_image = Image.open("Logo\spotaward.jpg")  
-            st.image(certificate_image, caption="Certificate of Excellence", use_column_width=True)
+            certificate_image = Image.open("Logo/spotaward.jpg")  
+            st.image(certificate_image, caption="Certificate of Excellence", use_container_width=True)
 
         with col2:
             st.markdown("""
@@ -344,7 +344,7 @@ with col1:
         
     #     with col1:
     #         certificate_image = Image.open("certificates/outstanding_performer.png")  
-    #         st.image(certificate_image, caption="Outstanding Performer Award", use_column_width=True)
+    #         st.image(certificate_image, caption="Outstanding Performer Award", use_container_width=True)
 
     #     with col2:
     #         st.markdown("""
