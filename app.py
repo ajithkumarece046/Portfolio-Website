@@ -53,7 +53,7 @@ def add_gif(gif_path):
 
 with st.sidebar:
     # Display the profile GIF
-    st.image("Logo/Propic.gif", use_container_width=True)
+    st.image("Logo/Propic.gif", use_container_width=False, width=300)
     st.markdown("""
     <a class="nav-link" href="#introduction">Introduction</a>
     <a class="nav-link" href="#experience">Experience</a>
