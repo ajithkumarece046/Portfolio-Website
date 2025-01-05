@@ -51,9 +51,36 @@ def add_gif(gif_path):
 #         <a class="nav-link" href="#contact">Contact</a>
 #     """, unsafe_allow_html=True)
 
+# Sidebar content with custom HTML links
 with st.sidebar:
-    # Display the profile GIF
-    st.image("Logo/Propic.gif", use_container_width=False, width=300)
+    add_gif("Logo/Propic.gif")
+    st.markdown("""
+        <style>
+            section[data-testid="stSidebar"] {
+                border: 1px solid transparent; /* Transparent border for gradient */
+                border-radius: 10px;
+                background-image: linear-gradient(white, white),
+                                  linear-gradient(to right, #ff7f50, #1e90ff, #32cd32, #ff69b4); /* Multicolor gradient */
+                background-origin: border-box;
+                background-clip: content-box, border-box;
+                padding: 10px;
+                box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            }
+            .nav-link {
+                display: block; /* Make each link a block element so they stack on top of each other */
+                margin-bottom: 10px; /* Add space between links */
+                color: #fff;
+                font-weight: bold;
+                text-decoration: none;
+            }
+            .nav-link:hover {
+                color: black;
+                text-decoration: underline    
+
+            }
+        </style>
+    """, unsafe_allow_html=True)
+
     st.markdown("""
     <a class="nav-link" href="#introduction">Introduction</a>
     <a class="nav-link" href="#experience">Experience</a>
@@ -65,7 +92,6 @@ with st.sidebar:
     <a class="nav-link" href="#awards-and-achievements">Awards and Achievements</a>
     <a class="nav-link" href="#contact">Contact</a>
     """, unsafe_allow_html=True)
-
 
    
 # Main content
@@ -384,68 +410,3 @@ with col1:
 
 with col2:
     add_gif("Logo/contact.gif")
-
-
-
-st.markdown("""
-<style>
-/* Main Application Container */
-div[data-testid="stAppViewContainer"] {
-    border: 1px solid transparent;
-    border-radius: 15px;
-    background-image: linear-gradient(white, white),
-                      linear-gradient(to right, #ff7f50, #1e90ff, #32cd32, #ff69b4);
-    background-origin: border-box;
-    background-clip: content-box, border-box;
-    padding: 20px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-/* Sidebar Container */
-[data-testid="stSidebar"] {
-    width: 300px; /* Fixed width to prevent resizing */
-    min-width: 300px; /* Ensure sidebar doesn't shrink */
-    max-width: 300px; /* Ensure sidebar doesn't expand */
-    padding: 20px; /* Consistent padding */
-    border-right: none; /* Prevent duplicate borders */
-}
-
-/* Navigation Links */
-.nav-link {
-    display: block;
-    margin: 10px 0;
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: bold;
-    color: #333;
-    text-align: left;
-}
-
-.nav-link:hover {
-    color: #1e90ff;
-    text-decoration: underline;
-}
-
-/* Profile Picture */
-img {
-    display: block;
-    margin: 0 auto;
-    border-radius: 50%;
-    width: 100px;
-    height: auto;
-}
-
-/* Section Headers */
-h2 {
-    color: black;
-    font-family: 'Arial', sans-serif;
-}
-
-/* General Text */
-p {
-    font-size: 16px;
-    line-height: 1.6;
-    color: #333;
-}
-</style>
-""", unsafe_allow_html=True)
